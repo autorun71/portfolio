@@ -1,0 +1,48 @@
+<div class="messages-list" *ngIf="messagesService.messages && messagesService.messages.length > 0; else no_messages">
+    <a
+            routerLink="/im"
+            [queryParams]="{peers: dialog.id}"
+            *ngFor="let dialog of messagesService.messages"
+    >
+        <div
+                class="messages-list-dialog"
+                [ngClass]="{'not_read': dialog.message.read_status===0 && !dialog.message.sender && dialog.id !== user.userInfo.id}"
+
+        >
+            <div class="left_content">
+                <div class="user_avatar">
+                    <a routerLink="/id{{dialog.id}}">
+                        <img src="{{dialog.avatar || 'https://cdn.pixabay.com/photo/2017/11/10/05/46/user-2935522_640.png'}}"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="main_content">
+                <div class="header">
+                    <div class="user_name">
+                        <span>{{dialog.name}} {{dialog.last_name}}</span>
+                    </div>
+                    <div class="message-datetime">
+                        <span>{{dialog.message.time}}</span>
+                    </div>
+                </div>
+                <div class="message-content">
+                    <div class="user_avatar" *ngIf="dialog.message.sender && dialog.id !== user.userInfo.id">
+                        <img src="https://jrnetwork.net/uploads/monthly_2015_07/user-icon.png.ba97999857061c9c705b76f4aaf0d100.png">
+                    </div>
+                    <div class="message">
+                        <span [ngClass]="{'no_read': dialog.message.read_status && dialog.message.sender && dialog.id !== user.userInfo.id}">{{dialog.message.text}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<ng-template #no_messages>
+
+    <div class="no_messages">
+        <span>Нет сообщений</span>
+    </div>
+
+</ng-template>

@@ -1,0 +1,21 @@
+<div class="player-top">
+    <div class="controls">
+        <div class="prev" (click)="player.prev()"><img src="/assets/img/prev.png"></div>
+        <span
+
+                [ngClass]="{
+                        'play': player.status,
+                        'pause': !player.status
+                        }"
+
+
+                (click)="play()"
+        ></span>
+        <div class="next" (click)="player.next()"><img src="/assets/img/prev.png"></div>
+
+    </div>
+    <div class="text">
+        {{player.song.artist}} - {{player.song.name}}
+    </div>
+
+</div>

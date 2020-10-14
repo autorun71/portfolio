@@ -1,0 +1,18 @@
+<div class="block">
+    <div class="content-f-c">
+        <h1>{{title}}</h1>
+    </div>
+
+    <div class="content-f-c">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="auth-form">
+                <div><input type="text" name="email" formControlName="email" placeholder="Email"></div>
+                <div><input type="text" name="password" formControlName="password" placeholder="Password"></div>
+                <div><button type="submit" class="btn btn-primary btn-sm">Вход</button> <button type="button" class="btn btn-link btn-sm">Забыли пароль?</button></div>
+            </div>
+        </form>
+
+
+    </div>
+
+</div>

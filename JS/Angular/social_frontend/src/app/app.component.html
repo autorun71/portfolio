@@ -1,0 +1,15 @@
+<app-header *ngIf="auth.validCheck"></app-header>
+<section *ngIf="auth.validCheck" id="content">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-2 left-sidebar-f"><app-left-sidebar></app-left-sidebar></div>
+            <div class="col-2 left-sidebar"></div>
+            <div class="col content"><router-outlet></router-outlet></div>
+        </div>
+
+
+    </div>
+</section>
+
+

@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+use App\Core\DB\Migration;
+use App\Service\CLI;
+define("NOT_CHECK_PERMISSIONS", true);
+$_SERVER["DOCUMENT_ROOT"] = __DIR__;
+$DOCUMENT_ROOT = $_SERVER["DOCUMENT_ROOT"];
+require $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php";
+CLI::success("Run migrate");
+$arKey = explode(':', $argv[1]);
+$argv[1] = $arKey[0];
+
+switch ($argv[1]){
+    case 'run':
+        Migration::run();
+        break;
+    case 'rollback':
+        $limit = 5;
+        $arRollback = explode(':', $argv[1]);
+        if (isset($arKey[1]) && is_int($arKey[1])){
+            $limit = $arKey[1];
+        }
+        Migration::rollback($limit);
+        break;
+}
+exit();
+

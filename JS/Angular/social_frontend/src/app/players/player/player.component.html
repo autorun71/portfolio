@@ -1,0 +1,57 @@
+<div class="player">
+    <div class="player_top">
+        <div class="play_pause" id="play" data-play="false">
+            <span
+
+                    [ngClass]="{
+                        'play': player.status,
+                        'pause': !player.status
+                        }"
+
+
+                    (click)="play()"
+            ></span>
+<!--            <ng-template #pause>-->
+<!--                <span class="pause" (click)="play()">||</span>-->
+<!--            </ng-template>-->
+
+        </div>
+        <div class="controls">
+            <div id="prev" (click)="prev()"><img src="/assets/img/prev.png"></div>
+            <div id="next" (click)="next()"><img src="/assets/img/prev.png"></div>
+        </div>
+
+        <div class="body">
+            <div class="title" id="title">
+                <div id="artist">{{player.song.artist}}</div>
+                <div id="songName">{{player.song.name}}</div>
+
+            </div>
+            <div class="time">
+                <span id="time" (click)="trackTimeDirectChange()">{{player.trackTime}}</span>
+            </div>
+            <div class="polosa" (mousedown)="clickPolosa($event)">
+                <div id="hoverTime"></div>
+                <div class="polosa_w">
+                    <div id="playTime" [ngStyle]="{'width': player.poloska + '%'}">
+                        <div class="slider" id="slider"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="controller">
+            <div
+                    id="repeat"
+                    (click)="repeatTrack()"
+                    data-repeat="true"
+                    [ngClass]="{'active': player.repeat === 1 || player.repeat === 2}"
+            ><span
+                    *ngIf="player.repeat == 2"
+            >1</span></div>
+        </div>
+    </div>
+
+
+</div>
+

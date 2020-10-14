@@ -1,0 +1,26 @@
+.playlist{
+  width: 100%;
+  margin-top: 15px;
+  background: #fafbfc;
+  border: 1px solid #e7e8ec;
+  min-height: 50px;
+
+  .item-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    //width: 390px;
+    cursor: pointer;
+    padding: 5px;
+
+    &:hover{
+
+      background: #e8e8e8;
+    }
+    &.active{
+      font-weight: 900;
+      background: #ddd;
+    }
+  }
+}
+

@@ -1,0 +1,24 @@
+ul.left-sidebar-list{
+  list-style: none;
+  margin: 0;
+  //margin-left: 17px;
+  padding: 0;
+
+
+
+    a{
+      font-size: 14px;
+      color: #696969;
+      text-decoration: none;
+
+      li{
+        padding: 2px 0 2px 17px;
+        &:hover{
+          background: #646b7921;
+        }
+      }
+    }
+
+
+
+}

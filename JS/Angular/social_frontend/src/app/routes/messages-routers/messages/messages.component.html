@@ -1,0 +1,28 @@
+<div *ngIf="messagesService.messageGetInit" class="messages-page">
+
+    <div class="messages" >
+        <app-all-dialogs *ngIf="!oneDialog || messagesService.dialogId === 0"></app-all-dialogs>
+        <app-dialog-messages *ngIf="oneDialog && messagesService.dialogId > 0"></app-dialog-messages>
+
+    </div>
+    <div class="right-messages-sidebar">
+        <div class="right-block-sidebar">
+            <ul class="message-options">
+                <a routerLink="/im">
+                    <li [ngClass]="{'active': !notRead && !important}">
+                        <span>Все сообщения</span>
+                    </li>
+                </a>
+                <a routerLink="/im" [queryParams]="{'tab':'unread'}">
+                    <li [ngClass]="{'active': notRead}">
+                        <span>Непрочитанные</span>
+                    </li>
+                </a>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+

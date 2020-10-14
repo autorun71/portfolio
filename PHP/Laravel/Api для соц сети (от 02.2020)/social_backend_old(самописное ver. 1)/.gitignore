@@ -1,0 +1,10 @@
+/node_modules
+/public/js
+/public/html
+/frontend/angular
+/vendor
+env.php
+composer.lock
+package-lock.json
+webpack.config.js
+tsconfig.json

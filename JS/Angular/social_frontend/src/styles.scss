@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+  font-size: 14px;
+}
+body {
+  background: #edeef0;
+  color: #000000e6;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: 1.5rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+.block {
+  display: block;
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #dedede;
+  background: #fff;
+}
+.right-block-sidebar {
+  display: block;
+  margin-top: 15px;
+  padding: 5px 0;
+  border: 1px solid #dedede;
+  background: #fff;
+}
+.content-f-c {
+  display: flex;
+  justify-content: center;
+}
+
+.content-f-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 1140px !important;
+    max-width: 1140px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 1140px !important;
+    max-width: 1140px !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 1140px !important;
+    max-width: 1140px !important;
+  }
+}

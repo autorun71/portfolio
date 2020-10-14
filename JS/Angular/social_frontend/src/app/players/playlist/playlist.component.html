@@ -1,0 +1,11 @@
+<div class="playlist">
+    <div *ngFor="let track of playlistService.playlists;"
+            class="item-list"
+            (click)="setTrack(track.id)"
+            [ngClass]="{'active': track.id === player.playTrackId}"
+    >
+        <div class="item-title">
+            <span class="item-title-artist">{{track.artist}}</span> - <span class="item-title-song">{{track.name}}</span>
+        </div>
+    </div>
+</div>

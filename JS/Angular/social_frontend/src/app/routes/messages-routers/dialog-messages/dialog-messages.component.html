@@ -1,0 +1,12 @@
+<div class="messages-list" *ngIf="messagesService.dialogList && messagesService.dialogList.user">
+    <a routerLink="/im">Назад</a>
+    <div class="messages-header">
+        {{messagesService.dialogList.user.name}} {{messagesService.dialogList.user.last_name}}
+    </div>
+
+    <div *ngFor="let message of messagesService.dialogList.dialog">
+        <div *ngIf="message.message.sender === 1"><b>{{user.userInfo.name}}</b>:</div>
+        <div *ngIf="message.message.sender === 0"><b>{{messagesService.dialogList.user.name}}</b>:</div>
+        {{message.message.text}}
+    </div>
+</div>

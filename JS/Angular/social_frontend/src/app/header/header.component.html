@@ -1,0 +1,66 @@
+<section id="header">
+    <header>
+        <div class="container">
+            <nav *ngIf="!auth.isAuth; else authorize" class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" routerLink="/">Sociate</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+
+                    </div>
+                </div>
+                <div class="form-inline">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup2">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" routerLinkActive="active" routerLink="/login">Вход</a>
+                            <a class="nav-item nav-link" routerLinkActive="active"
+                               routerLink="/register">Регистрация</a>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
+
+            <ng-template #authorize>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" routerLink="/">Sociate</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" routerLinkActive="active" routerLink="/about">Home <span
+                                    class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" routerLinkActive="active" routerLink="/people">People</a>
+                            <a class="nav-item nav-link" routerLinkActive="active" routerLink="/im">Message</a>
+                            <a class="nav-item nav-link" id="playerShow" routerLinkActive="active" (click)="playerShow()"
+                               href="/music">Music </a>
+                            <a *ngIf="player.initPlayStatus" class="nav-item nav-link"><app-player-top></app-player-top></a>
+                        </div>
+                    </div>
+                    <div class="form-inline">
+                        <div class="collapse navbar-collapse">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link" href="/logout">Выход</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+
+            </ng-template>
+        </div>
+    </header>
+</section>
+
+<div *ngIf="player.playerDisplay" class="player-window">
+    <app-player-popup></app-player-popup>
+
+</div>

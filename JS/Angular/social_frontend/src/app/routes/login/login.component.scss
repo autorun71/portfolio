@@ -1,0 +1,17 @@
+.auth-form {
+  width: 200px;
+  margin-top: 5px;
+
+  > div {
+    margin-bottom: 15px;
+    > input {
+      border: 1px solid #cecece;
+      font-size: 14px;
+      padding: 5px;
+      width: 200px;
+      color: #333;
+    }
+  }
+
+
+}

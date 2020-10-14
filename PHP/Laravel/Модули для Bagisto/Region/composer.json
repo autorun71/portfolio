@@ -1,0 +1,29 @@
+{
+    "name": "bagisto/laravel-region",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@webkul.com"
+        }
+    ],
+    "require": {
+        "bagisto/laravel-user": "dev-master",
+        "bagisto/laravel-ui": "dev-master",
+        "bagisto/laravel-core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\Region\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\Region\\RegionServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}
