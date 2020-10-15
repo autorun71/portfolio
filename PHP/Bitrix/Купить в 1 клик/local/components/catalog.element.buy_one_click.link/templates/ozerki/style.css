@@ -1,0 +1,32 @@
+.product-cart.one-click {
+    background: #F2C94C;
+}
+
+.buy_one_click {
+    margin-top: 15px;
+}
+
+.buy_one_click.element {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: -.01em;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.buy_one_click .one_click_img {
+    display: flex;
+}
+
+.buy_one_click .one_click_text {
+    color: black;
+    display: flex;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}

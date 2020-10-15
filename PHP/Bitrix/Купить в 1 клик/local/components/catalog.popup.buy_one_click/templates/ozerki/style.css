@@ -1,0 +1,542 @@
+.remodal-overlay2 {
+    background: rgba(43, 46, 56, 0.9);
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.one-click-popup .proposals-modal__header p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+.one-click-popup.remodal-wrapper {
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.one-click-popup input.errorField {
+    border-bottom: 1px solid;
+    border-bottom-color: red;
+}
+
+.one-click-popup .proposals-modal {
+    cursor: default;
+    max-width: 660px;
+}
+
+.one-click-popup .proposals-modal_form-warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    min-height: 50px;
+    background: #FFFABA;
+    color: #767676;
+}
+
+.one-click-popup .proposals-modal_form-warning .proposals-modal_form-warning-text {
+
+}
+
+.one-click-popup .proposals-modal__form-item {
+
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.one-click-popup .proposals-modal__verify {
+    display: block;
+}
+
+.one-click-popup .proposals-modal__verify-information {
+    width: fit-content;
+    position: relative;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    letter-spacing: -0.01em;
+}
+
+.one-click-popup .proposals-modal__verify-information svg {
+    position: absolute;
+    top: 2px;
+    right: -12px;
+}
+
+.one-click-popup .proposals-modal__verify-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one-click-popup .proposals-modal__verify-input, .one-click-popup .proposals-modal__verify-button {
+    width: 50%;
+}
+
+.proposals-item-list {
+    display: flex;
+
+}
+
+
+.proposals-item-line {
+    width: 100%;
+    opacity: 0.7;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.proposals-item-info {
+    display: flex;
+    align-items: center;
+}
+
+.proposals-item-img {
+    max-width: 120px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    max-height: 140px;
+    padding: 5px;
+    justify-content: center;
+    overflow: hidden;
+    height: auto;
+}
+
+.proposals-item-img img {
+    width: auto;
+    height: auto;
+}
+
+.proposals-item-title {
+    min-height: 44px;
+    align-items: normal;
+    display: inline-grid;
+    margin-top: 22px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    margin-left: 42px;
+    min-width: 225px;
+    max-width: 225px;
+}
+
+.proposals-item-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #969696;
+}
+
+.proposals-item-available {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A1CD3A;
+}
+#availableCount {
+    font-weight: 900;
+}
+
+.proposals-item-name {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.proposals-item-count {
+    display: flex;
+}
+
+.item-count-num {
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    /*padding-top: 1px;*/
+    opacity: 0.7;
+    border: 1.12954px solid #ECECEC;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.item-count-input {
+    margin: 0 8px;
+}
+
+.item-count-input input {
+    border: none;
+    width: 26px;
+    text-align: center;
+}
+
+.item-count-num span, .item-count-input span {
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.01em;
+}
+
+.proposals-item-price {
+    position: relative;
+    margin-top: -5px;
+    margin-left: 17px;
+}
+
+.item-price-rub {
+    font-weight: bold;
+    font-size: 16.8717px;
+    line-height: 27px;
+    text-align: right;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #171717;
+}
+
+.item-price-kop {
+    font-weight: 600;
+    font-size: 9.62301px;
+    line-height: 12px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #171717;
+    position: absolute;
+    width: 9.4px;
+    top: 5px;
+}
+
+.item-price-cur {
+    margin-left: 15px;
+}
+
+.proposals-item-total-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 86px;
+    margin-bottom: -25px;
+}
+
+.proposals-item-total-wrap .proposals-item-errors {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.proposals-item-total-wrap .proposals-item-errors span {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-bottom: 5px;
+    word-break: break-word;
+}
+
+.proposals-item-total {
+    display: flex;
+    align-items: baseline;
+    width: 240px;
+    min-width: 240px;
+    flex-wrap: wrap;
+}
+
+.proposals-item-total-count {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -0.01em;
+    color: #171717;
+}
+
+.proposals-item-total-text {
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: -0.01em;
+    color: #252525;
+}
+
+.proposals-item-total-price {
+    margin-left: 5px;
+    position: relative;
+}
+
+.proposals-item-pharmacy-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 135px;
+    margin-bottom: -25px;
+}
+
+.proposals-item-pharmacy {
+    min-width: 180px;
+    width: 180px;
+}
+
+.proposals-item-pharmacy-btn {
+    width: 100%;
+}
+
+.proposals-item-pharmacy-wrap .proposals-item-errors span {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.proposals-item-pharmacy {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+
+}
+
+
+.proposals-item-pharmacy-text {
+    padding-left: 30px;
+    width: auto;
+}
+
+.one-click-popup .proposals-modal__verify-input, .one-click-popup .proposals-item-pharmacy .proposals-modal__verify-button {
+    width: 100%;
+}
+
+.proposals-item-pharmacy-text span {
+    display: block;
+    padding-right: 10px;
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: -0.01em;
+    color: #252525;
+}
+
+
+.metro_info_one_click {
+    position: relative;
+    display: flex;
+}
+
+
+.pharmacy_zagalovok {
+    margin-top: -10px;
+    margin-left: -30px;
+    padding: 0 0 15px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+.metro_info_one_click .metro_logo_one_click {
+    position: absolute;
+    left: -30px;
+}
+
+.metro_info_one_click .metro_name_one_click, .pharmacy_address_one_click {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+.one_click_datetime {
+    color: #969696;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.success-one_click {
+    text-align: center;
+    margin: 35px;
+}
+
+.success-one_click .order_num {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #171717;
+}
+
+.success-one_click .order-success-one_click {
+    max-width: 445px;
+    padding: 10px;
+    background: #00A650;
+    margin: 30px auto;
+}
+
+.success-one_click .order-success-one_click span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    word-break: break-word;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+}
+
+.success-one_click .wait_sms_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #252525;
+}
+
+.g-button.g-button-green {
+    background: #00A650;
+}
+
+@media (max-width: 650px) {
+    .proposals-item-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .proposals-item-info {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .proposals-item-img {
+        max-width: 110px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        max-height: 110px;
+        padding: 5px;
+        justify-content: center;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .proposals-item-title {
+        min-height: 44px;
+        align-items: normal;
+        display: inline-grid;
+        margin-top: 22px;
+        margin-right: 22px;
+        margin-bottom: 22px;
+        margin-left: 22px;
+        min-width: 120px;
+        max-width: 120px;
+        word-break: break-word;
+    }
+
+    .proposals-item-pharmacy-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 160px;
+        flex-wrap: wrap;
+        margin-bottom: -10px;
+    }
+
+    .pharmacy_zagalovok {
+        margin-top: 10px;
+    }
+
+    .proposals-item-pharmacy {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .proposals-item-total-wrap {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: space-between;
+        height: 86px;
+        margin-bottom: -25px;
+    }
+
+    .proposals-item-total-wrap .proposals-item-errors {
+        width: auto;
+        min-height: 10px;
+        padding-right: 10px;
+
+    }
+
+    /*
+    Шрифт
+     */
+
+    .proposals-item-total-count {
+        font-size: 20px;
+    }
+    .proposals-item-total-text {
+        font-size: 16px;
+    }
+
+    .item-price-rub {
+        font-size: 14.8717px;
+    }
+}
+
+@media (max-width: 500px) {
+    .one-click-popup .proposals-modal__verify-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .proposals-modal__verify-input{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    .proposals-modal__verify-input .input__box{
+        margin-bottom: 5px;
+    }
+    #oneClickSubmit {
+        width: 100%;
+    }
+}
